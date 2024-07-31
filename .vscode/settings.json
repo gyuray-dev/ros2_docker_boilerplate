@@ -1,3 +1,13 @@
 {
-    "cmake.sourceDirectory": "/home/ros/ros2_docker_boilerplate/src/amr_bringup"
+    "cmake.sourceDirectory": "/home/ros/ros2_docker_boilerplate/src/amr_bringup",
+    "python.autoComplete.extraPaths": [
+        // "/home/ros/amr_ws/build/my_package",
+        // "/home/ros/amr_ws/install/my_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        // "/home/ros/amr_ws/build/my_package",
+        // "/home/ros/amr_ws/install/my_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages"
+    ]
 }
