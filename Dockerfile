@@ -1,5 +1,14 @@
 FROM osrf/ros:humble-simulation
 
+# Install basic utilities
+RUN apt-get update -yq \
+ && apt-get install -yq \
+    sudo \
+    vim
+
+# Set the Vim as Git editor
+RUN git config --global core.editor vim
+
 # User setup
 ARG USERNAME=ros
 ARG USER_UID=1000
@@ -13,10 +22,8 @@ RUN groupadd --gid $USER_GID ${USERNAME} \
  && mkdir /home/${USERNAME}/.config \
  && chown $USER_UID:$USER_GID /home/${USERNAME}/.config
 
-# Set up sudo for the non-root User
-RUN apt-get update -yq \
- && apt-get install -yq sudo \
- && echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USERNAME} \
+# Set up sudo for the non-root user
+RUN echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USERNAME} \
  && chmod 0440 /etc/sudoers.d/${USERNAME}
 
 COPY entrypoint.sh /
