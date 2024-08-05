@@ -13,7 +13,15 @@
 			"extensions": [
 				"donjayamanne.python-extension-pack",
 				"ms-vscode.cpptools-extension-pack",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"redhat.vscode-xml",
+				"ms-vscode.cmake-tools",
+				"formulahendry.auto-close-tag",
+				"formulahendry.auto-rename-tag",
+				"Gruntfuggly.todo-tree",
+				"DotJoshJohnson.xml",
+				"ms-python.black-formatter",
+				"redhat.vscode-yaml"
 			]
 		}
 	}

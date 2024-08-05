@@ -8,6 +8,8 @@
         "formulahendry.auto-close-tag",
         "formulahendry.auto-rename-tag",
         "gruntfuggly.todo-tree",
-        "dotjoshjohnson.xml"
+        "dotjoshjohnson.xml",
+        "ms-python.black-formatter",
+        "redhat.vscode-yaml"
     ]
 }
