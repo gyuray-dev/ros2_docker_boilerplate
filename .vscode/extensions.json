@@ -10,6 +10,8 @@
         "gruntfuggly.todo-tree",
         "dotjoshjohnson.xml",
         "ms-python.black-formatter",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "ms-iot.vscode-ros",
+        "tomoki1207.pdf"
     ]
 }
