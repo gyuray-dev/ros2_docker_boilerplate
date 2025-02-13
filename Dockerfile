@@ -1,4 +1,4 @@
-FROM osrf/ros:humble-simulation
+FROM osrf/ros:humble-desktop-full
 
 # Install basic utilities
 RUN apt-get update -yq \
