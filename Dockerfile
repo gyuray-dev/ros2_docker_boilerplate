@@ -13,7 +13,7 @@ RUN git config --global core.editor vim
 ARG USERNAME=ubuntu
 ARG USER_UID=1000
 ARG USER_GID=${USER_UID}
-ARG ROS_WORKSPACE_NAME=amr_ws
+ARG ROS_WORKSPACE_NAME=ros_ws
 ENV ROS_WORKSPACE_NAME=${ROS_WORKSPACE_NAME}
 
 # Create a non-root user
