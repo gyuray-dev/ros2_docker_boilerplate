@@ -10,7 +10,7 @@ RUN apt-get update -yq \
 RUN git config --global core.editor vim
 
 # User setup
-ARG USERNAME=ros
+ARG USERNAME=ubuntu
 ARG USER_UID=1000
 ARG USER_GID=${USER_UID}
 ARG ROS_WORKSPACE_NAME=amr_ws
@@ -29,7 +29,7 @@ RUN echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USERNAME} \
 COPY entrypoint.sh /
 COPY --chown=${USERNAME}:${USERNAME} src /home/${USERNAME}/${ROS_WORKSPACE_NAME}/src
 
-USER ros
+USER ${USERNAME}
 WORKDIR /home/${USERNAME}/${ROS_WORKSPACE_NAME}
 
 # install ROS dependencies
