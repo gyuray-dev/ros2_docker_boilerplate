@@ -43,5 +43,5 @@ RUN source /opt/ros/humble/setup.bash \
  && colcon build \
  && source install/setup.bash
 
-ENTRYPOINT [ "/bin/bash", "entrypoint.sh" ]
+ENTRYPOINT [ "/bin/bash", "/entrypoint.sh" ]
 CMD [ "bash" ]
